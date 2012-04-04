@@ -2,12 +2,7 @@ require "./problem"
 
 class Problem1 < Problem
 	def solve
-		sum = 0
-		counter = 0
-		999.times do
-			counter += 1
-			sum += counter if counter % 5 == 0 || counter % 3 == 0 
-		end
+		sum = (1..999).select{ |i| i % 5 == 0 || i % 3 == 0}.reduce(:+)
 		puts "Answer is: #{sum}"
 	end
 end
