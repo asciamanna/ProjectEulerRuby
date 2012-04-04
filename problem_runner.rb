@@ -1,2 +1,2 @@
-require "./problem1"
-Problem1.new.run
+require "./problem2"
+Problem2.new.run
